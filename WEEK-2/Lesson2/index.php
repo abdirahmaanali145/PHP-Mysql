@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    body{
+         background-color: lightblue;
+    }
+    </style>
 <body>
     <?php
 //Creating Array - numeric array
@@ -17,7 +22,7 @@
     $names [3]= 15.4;
     echo $names[3] ."<br>";
     echo $names[1] ."<br>";
-    echo $names[5] ."<br>";
+    echo $names[0] ."<br>";
     
     //display 
     var_dump($names);

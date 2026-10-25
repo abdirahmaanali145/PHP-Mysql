@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Account and Transaction Management</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <main class="form-card">
+        <h1>Banking Account Form</h1>
+        <p class="intro">Enter fictional customer information to simulate one banking transaction.</p>
+
+        <form action="process.php" method="POST" enctype="multipart/form-data">
+            <div class="field">
+                <label for="full_name">Customer Full Name</label>
+                <input type="text" id="full_name" name="full_name" required>
+            </div>
+            <div class="field">
+                <label for="account_number">Account Number</label>
+                <input type="text" id="account_number" name="account_number" required>
+            </div>
+
+            <fieldset>
+                <legend>Gender</legend>
+                <label><input type="radio" name="gender" value="Male" required> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+                <label><input type="radio" name="gender" value="Other"> Other</label>
+            </fieldset>
+
+            <div class="grid">
+                <div class="field">
+                    <label for="account_type">Account Type</label>
+                    <select id="account_type" name="account_type" required>
+                        <option value="">Select an account type</option>
+                        <option value="Savings">Savings</option>
+                        <option value="Current">Current</option>
+                        <option value="Business">Business</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="opening_balance">Opening Balance ($)</label>
+                    <input type="number" id="opening_balance" name="opening_balance" min="0" step="0.01" required>
+                </div>
+            </div>
+
+            <fieldset>
+                <legend>Transaction Type</legend>
+                <label><input type="radio" name="transaction_type" value="Deposit" required> Deposit</label>
+                <label><input type="radio" name="transaction_type" value="Withdrawal"> Withdrawal</label>
+            </fieldset>
+
+            <div class="grid">
+                <div class="field">
+                    <label for="transaction_amount">Transaction Amount ($)</label>
+                    <input type="number" id="transaction_amount" name="transaction_amount" min="0.01" step="0.01" required>
+                </div>
+                <div class="field">
+                    <label for="account_duration">Account Duration (Years)</label>
+                    <input type="number" id="account_duration" name="account_duration" min="0" step="1" required>
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="identification_document">Identification Document (maximum 2 MB)</label>
+                <input type="file" id="identification_document" name="identification_document" accept=".pdf,.jpg,.jpeg,.png" required>
+            </div>
+            <div class="actions">
+                <button class="submit" type="submit">Process Transaction</button>
+                <button class="reset" type="reset">Reset</button>
+            </div>
+        </form>
+        <p class="note">This is a classroom simulation only. Do not enter real banking information.</p>
+    </main>
+</body>
+</html>

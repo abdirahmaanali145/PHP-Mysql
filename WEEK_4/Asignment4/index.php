@@ -112,7 +112,7 @@ function fieldError($key, $errors) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Registration Form</title>
-    <link href=""C:\Users\Hp\Pictures\screnshot week3\check if specific key exists in an array.png rel="stylesheet">
+    <link href=""C:\Users\Hp\Pictures\screnshot week3\check if specific key exists in an array.png  rel="stylesheet">
     <style>
         body { background: #f3f6fb; }
         .page-wrap { max-width: 1000px; }
